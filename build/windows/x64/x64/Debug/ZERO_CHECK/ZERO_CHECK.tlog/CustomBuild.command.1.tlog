@@ -1,0 +1,10 @@
+^D:\PARV-PROJ\ECOM_STARTUP_CODE\CLIENT_SIDE\ADMIN_PANAL_STARTUP\BUILD\WINDOWS\X64\CMAKEFILES\8EDDAADDA7785C5EA2597F662A84E0C7\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/windows -BD:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64/flutter_admin_portal.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

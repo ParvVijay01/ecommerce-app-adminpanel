@@ -1,0 +1,10 @@
+^D:\PARV-PROJ\ECOM_STARTUP_CODE\CLIENT_SIDE\ADMIN_PANAL_STARTUP\BUILD\WINDOWS\X64\CMAKEFILES\8EDDAADDA7785C5EA2597F662A84E0C7\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

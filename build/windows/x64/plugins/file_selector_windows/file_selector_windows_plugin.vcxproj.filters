@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\file_selector_windows.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\file_dialog_controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\file_selector_plugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\messages.g.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\string_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include\file_selector_windows\file_selector_windows.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\file_dialog_controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\file_selector_plugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\messages.g.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\string_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2A951335-6B30-3E99-86E1-88D834A410FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A44FD119-3011-38E0-A1C3-D613A6B0CBAA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

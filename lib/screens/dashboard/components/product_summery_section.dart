@@ -18,7 +18,7 @@ class ProductSummerySection extends StatelessWidget {
       builder: (context, dataProvider, _) {
         int totalProduct = 1;
         //TODO: should complete Make this product number dynamic bt calling calculateProductWithQuantity
-        totalProduct = 1;
+        totalProduct = 0;
         int outOfStockProduct = 0;
         int limitedStockProduct = 0;
         int otherStockProduct = totalProduct - outOfStockProduct - limitedStockProduct;

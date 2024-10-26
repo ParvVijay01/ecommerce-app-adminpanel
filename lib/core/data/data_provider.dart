@@ -59,13 +59,43 @@ class DataProvider extends ChangeNotifier {
   List<MyNotification> _filteredNotifications = [];
   List<MyNotification> get notifications => _filteredNotifications;
 
-  DataProvider() {}
+  DataProvider() {
+    getAllCategory();
+  }
 
 
-  //TODO: should complete getAllCategory
+Future<List<Category>> getAllCategory({bool showSnack = false}) async {
+    try{
+      Response response = await service.getItems(endpointUrl: 'categories');
+      if(response.isOk){
+        ApiResponse<List<Category>> apiResponse = ApiResponse<List<Category>>.fromJson(
+          response.body,
+            (json) => (json as List).map((item) => Category.fromJson(item)).toList(),
+        );
+        _allCategories = apiResponse.data ?? [];
+        _filteredCategories = List.from(_allCategories);
+        notifyListeners();
+        if(showSnack) SnackBarHelper.showSuccessSnackBar(apiResponse.message);
+      }
+    } catch(err){
 
+      if(showSnack) SnackBarHelper.showErrorSnackBar(err.toString());
+      rethrow;
+    }
+    return _filteredCategories;
+}
 
-  //TODO: should complete filterCategories
+  void filterCategories(String keyword){
+    if(keyword.isEmpty){
+      _filteredCategories = List.from(_allCategories);
+    } else {
+      final lowerKeyword = keyword.toLowerCase();
+      _filteredCategories = _allCategories.where((category){
+        return (category.name ?? '').toLowerCase().contains(lowerKeyword);
+      }).toList();
+    }
+    notifyListeners();
+  }
 
   //TODO: should complete getAllSubCategory
 

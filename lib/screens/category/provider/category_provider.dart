@@ -1,4 +1,8 @@
+import 'dart:developer';
 import 'dart:io';
+import 'package:admin/models/api_response.dart';
+import 'package:admin/utility/snack_bar_helper.dart';
+
 import '../../../services/http_services.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart' hide Category;
@@ -21,12 +25,97 @@ class CategoryProvider extends ChangeNotifier {
 
   CategoryProvider(this._dataProvider);
 
-  //TODO: should complete addCategory
 
-  //TODO: should complete updateCategory
+  addCategory() async {
+    try{
+      if(selectedImage == null){
+        SnackBarHelper.showErrorSnackBar("Please select an image!");
+        return; // stop the program eviction
+      }
+      Map<String, dynamic> formDataMap = {
+        'name': categoryNameCtrl.text,
+        'image': 'no-data', // image path will be added from the server side
+      };
 
-  //TODO: should complete submitCategory
+      final FormData form = await createFormData(imgXFile: imgXFile, formData: formDataMap);
 
+      final response = await service.addItem(endpointUrl: 'categories', itemData: form);
+      if(response.isOk){
+        ApiResponse apiResponse = ApiResponse.fromJson(response.body, null);
+        if(apiResponse.success == true){
+          clearFields();
+          SnackBarHelper.showSuccessSnackBar("${apiResponse.message}");
+          _dataProvider.getAllCategory();
+          log("Category added");
+        } else {
+          SnackBarHelper.showErrorSnackBar('Failed to add category: ${apiResponse.message}');
+        }
+      } else {
+        SnackBarHelper.showErrorSnackBar("Error ${response.body?['message'] ?? response.statusText}");
+      }
+
+    } catch (err) {
+      print(err);
+      SnackBarHelper.showErrorSnackBar("An error occurred : ${err}");
+      rethrow;
+    };
+  }
+
+  updateCategory() async {
+    try{
+      Map<String, dynamic> formDataMap = {
+        'name': categoryNameCtrl.text,
+        'image': categoryForUpdate?.image ?? "",
+      };
+
+      final FormData form = await createFormData(imgXFile: imgXFile, formData: formDataMap);
+
+      final response = await service.updateItem(endpointUrl: 'categories', itemId: categoryForUpdate?.sId ?? '', itemData: form);
+      if(response.isOk){
+        ApiResponse apiResponse = ApiResponse.fromJson(response.body, null);
+        if(apiResponse.success == true){
+          clearFields();
+          SnackBarHelper.showSuccessSnackBar('${apiResponse.message}');
+          log('category added');
+          _dataProvider.getAllCategory();
+        } else {
+          SnackBarHelper.showErrorSnackBar('Failed to update category: ${apiResponse.message}');
+        }
+      } else {
+        SnackBarHelper.showErrorSnackBar('Error ${response.body?['message'] ?? response.statusText}');
+      }
+    } catch (err) {
+        print(err);
+        SnackBarHelper.showErrorSnackBar('An error occurred: $err');
+        rethrow;
+    }
+  }
+
+  submitCategory(){
+    if(categoryForUpdate != null){
+      updateCategory();
+    } else {
+      addCategory();
+    }
+  }
+
+  deleteCategory(Category category) async {
+    try{
+      Response response = await service.deleteItem(endpointUrl: 'categories', itemId: category.sId ?? '');
+      if(response.isOk){
+        ApiResponse apiResponse = ApiResponse.fromJson(response.body, null);
+        if(apiResponse.success == true){
+          SnackBarHelper.showSuccessSnackBar('Category deleted successfully');
+          _dataProvider.getAllCategory();
+        }
+      } else {
+        SnackBarHelper.showErrorSnackBar(('Error ${response.body?['message'] ?? response.statusText}'));
+      }
+    } catch (err){
+      print(err);
+      rethrow;
+    }
+}
 
   void pickImage() async {
     final ImagePicker picker = ImagePicker();
@@ -37,11 +126,6 @@ class CategoryProvider extends ChangeNotifier {
       notifyListeners();
     }
   }
-
-  //TODO: should complete deleteCategory
-
-  //TODO: should complete setDataForUpdateCategory
-
 
   //? to create form data for sending image with body
   Future<FormData> createFormData({required XFile? imgXFile, required Map<String, dynamic> formData}) async {

@@ -45,7 +45,6 @@ class SubCategoryProvider extends ChangeNotifier {
     }
   }
 
-  //TODO: should complete updateSubCategory
   updateSubCategory() async {
     try{
       if(subCategoryForUpdate != null){
@@ -72,7 +71,6 @@ class SubCategoryProvider extends ChangeNotifier {
     }
   }
 
-  //TODO: should complete submitSubCategory
   submitSubCategory(){
     if(subCategoryForUpdate != null){
       updateSubCategory();
@@ -81,7 +79,6 @@ class SubCategoryProvider extends ChangeNotifier {
     }
   }
 
-  //TODO: should complete deleteSubCategory
   deleteCategory(SubCategory subCategory) async {
     try {
       Response response = await service.deleteItem(

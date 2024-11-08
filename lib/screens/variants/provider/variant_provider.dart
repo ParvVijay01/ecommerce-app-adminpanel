@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import '../../../models/variant_type.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
@@ -20,17 +22,85 @@ class VariantsProvider extends ChangeNotifier {
 
   VariantsProvider(this._dataProvider);
 
+  addVariant() async {
+    try{
+      Map<String, dynamic> variant = {"name": variantCtrl.text, "variantTypeId": selectedVariantType?.sId};
+      final response = await service.addItem(endpointUrl: "variants", itemData: variant);
+      if(response.isOk){
+        ApiResponse apiResponse = ApiResponse.fromJson(response.body, null);
+        if(apiResponse.success == true){
+          clearFields();
+          SnackBarHelper.showSuccessSnackBar("${apiResponse.message}");
+          _dataProvider.getAllVariant();
+          log("variant added");
+        }else {
+          SnackBarHelper.showErrorSnackBar("Failed to add variant: ${apiResponse.message}");
+        }
+      } else {
+        SnackBarHelper.showErrorSnackBar("Error ${response.body?['message'] ?? response.statusText}");
+      }
+    } catch(err){
+      print(err);
+      SnackBarHelper.showErrorSnackBar("An error occurred: $err");
+      rethrow;
+    }
+  }
 
-  //TODO: should complete addVariant
+  updateVariant() async {
+    try{
+      if(variantForUpdate != null){
+        Map<String, dynamic> variant = {'name': variantCtrl.text, 'variantTypeId': selectedVariantType?.sId};
+        final response = await service.updateItem(endpointUrl: 'variants', itemId: variantForUpdate?.sId ?? '', itemData: variant);
+        if(response.isOk){
+          ApiResponse apiResponse = ApiResponse.fromJson(response.body, null);
+          if(apiResponse.success == true) {
+            clearFields();
+            SnackBarHelper.showSuccessSnackBar('${apiResponse.message}');
+            log("Variant added");
+            _dataProvider.getAllVariant();
+          } else {
+            SnackBarHelper.showErrorSnackBar('Failed to add variant: ${apiResponse.message}');
+          }
+        } else {
+          SnackBarHelper.showErrorSnackBar('Error ${response.body?['message'] ?? response.statusText}');
+        }
+      }
+    } catch(err){
+      print(err);
+      SnackBarHelper.showErrorSnackBar('An error occurred: $err');
+      rethrow;
+    }
+  }
 
 
-  //TODO: should complete updateVariant
+  submitVariant(){
+    if(variantForUpdate != null){
+      updateVariant();
+    } else {
+      addVariant();
+    }
+  }
 
 
-  //TODO: should complete submitVariant
-
-
-  //TODO: should complete deleteVariant
+  deleteVariant(Variant variant) async {
+    try{
+      Response response = await service.deleteItem(
+          endpointUrl: 'variants', itemId: variant.sId ?? '');
+      if (response.isOk) {
+        ApiResponse apiResponse = ApiResponse.fromJson(response.body, null);
+        if (apiResponse.success == true) {
+          SnackBarHelper.showSuccessSnackBar('Variant deleted successfully');
+          _dataProvider.getAllVariant();
+        }
+      } else {
+        SnackBarHelper.showErrorSnackBar(
+            ('Error ${response.body?['message'] ?? response.statusText}'));
+      }
+    } catch(err){
+      print(err);
+      rethrow;
+    }
+  }
 
 
   setDataForUpdateVariant(Variant? variant) {

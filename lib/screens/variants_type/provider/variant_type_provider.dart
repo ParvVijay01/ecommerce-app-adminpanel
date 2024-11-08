@@ -60,7 +60,7 @@ class VariantsTypeProvider extends ChangeNotifier {
             log("Variant Type added");
             _dataProvider.getAllVariantType();
           } else {
-            SnackBarHelper.showErrorSnackBar('Failed to add sub category: ${apiResponse.message}');
+            SnackBarHelper.showErrorSnackBar('Failed to add Variant type: ${apiResponse.message}');
           }
         } else {
           SnackBarHelper.showErrorSnackBar('Error ${response.body?['message'] ?? response.statusText}');

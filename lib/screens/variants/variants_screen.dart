@@ -1,4 +1,3 @@
-import 'package:admin/utility/extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import '../../utility/constants.dart';
@@ -54,7 +53,7 @@ class VariantsScreen extends StatelessWidget {
                           Gap(20),
                           IconButton(
                               onPressed: () {
-                                context.dataProvider.getAllVariant();
+                                //TODO: should complete call getAllVariant
                               },
                               icon: Icon(Icons.refresh)),
                         ],

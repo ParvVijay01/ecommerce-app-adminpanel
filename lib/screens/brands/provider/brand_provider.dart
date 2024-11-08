@@ -31,7 +31,7 @@ class BrandProvider extends ChangeNotifier {
         if(apiResponse.success == true){
           clearFields();
           SnackBarHelper.showSuccessSnackBar(("${apiResponse.message}"),);
-          log("Sub Category added");
+          log("Brand added");
           _dataProvider.getAllBrands();
         } else {
           SnackBarHelper.showErrorSnackBar('Failed to add Brand: ${apiResponse.message}');
@@ -58,7 +58,7 @@ class BrandProvider extends ChangeNotifier {
           if(apiResponse.success == true) {
             clearFields();
             SnackBarHelper.showSuccessSnackBar('${apiResponse.message}');
-            log("Sub Category added");
+            log("Brand added");
             _dataProvider.getAllBrands();
           } else {
             SnackBarHelper.showErrorSnackBar('Failed to add sub category: ${apiResponse.message}');
@@ -82,7 +82,6 @@ class BrandProvider extends ChangeNotifier {
     }
   }
 
-  //TODO: should complete deleteBrand
   deleteBrand(Brand brand) async {
     try{
       Response response = await service.deleteItem(

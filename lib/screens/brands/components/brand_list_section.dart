@@ -57,7 +57,6 @@ class BrandListSection extends StatelessWidget {
                     (index) => brandDataRow(dataProvider.brands[index], index + 1, edit: () {
                       showBrandForm(context, dataProvider.brands[index]);
                     }, delete: () {
-                      //TODO: should complete deleteBrand
                       context.brandProvider.deleteBrand(dataProvider.brands[index]);
                     }),
                   ),

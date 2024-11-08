@@ -1,3 +1,5 @@
+import 'package:admin/utility/extensions.dart';
+
 import '../../../core/data/data_provider.dart';
 import 'add_variant_type_form.dart';
 import 'package:flutter/material.dart';
@@ -61,7 +63,7 @@ class VariantsTypeListSection extends StatelessWidget {
                         showAddVariantsTypeForm(context, dataProvider.variantTypes[index]);
                       },
                       delete: () {
-                        //TODO: should complete call deleteVariantType
+                        context.variantTypeProvider.deleteVariantType(dataProvider.variantTypes[index]);
                       },
                     ),
                   ),

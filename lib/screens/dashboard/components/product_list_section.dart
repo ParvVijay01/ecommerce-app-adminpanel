@@ -1,3 +1,5 @@
+import 'package:admin/utility/extensions.dart';
+
 import '../../../core/data/data_provider.dart';
 import '../../../models/product.dart';
 import 'add_product_form.dart';
@@ -61,7 +63,7 @@ class ProductListSection extends StatelessWidget {
                           showAddProductForm(context, dataProvider.products[index]);
                         },
                           delete: () {
-                            //TODO: should complete call deleteProduct
+                            context.dashBoardProvider.deleteProduct(dataProvider.products[index]);
                           },),
                   ),
                 );

@@ -19,7 +19,6 @@ class BrandHeader extends StatelessWidget {
         Spacer(flex: 2),
         Expanded(child: SearchField(
           onChange: (val) {
-            //TODO: should complete call filterBrands
             context.dataProvider.filteredBrands(val);
           },
         )),

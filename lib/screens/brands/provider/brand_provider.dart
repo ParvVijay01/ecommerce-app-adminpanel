@@ -61,7 +61,7 @@ class BrandProvider extends ChangeNotifier {
             log("Brand added");
             _dataProvider.getAllBrands();
           } else {
-            SnackBarHelper.showErrorSnackBar('Failed to add sub category: ${apiResponse.message}');
+            SnackBarHelper.showErrorSnackBar('Failed to add brand: ${apiResponse.message}');
           }
         } else {
           SnackBarHelper.showErrorSnackBar('Error ${response.body?['message'] ?? response.statusText}');

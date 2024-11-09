@@ -54,7 +54,7 @@ class BrandScreen extends StatelessWidget {
                           Gap(20),
                           IconButton(
                               onPressed: () {
-                                context.dataProvider.getAllBrands();
+                                context.dataProvider.getAllBrands(showSnack: true);
                               },
                               icon: Icon(Icons.refresh)),
                         ],

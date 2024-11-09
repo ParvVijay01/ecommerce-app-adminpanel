@@ -54,7 +54,7 @@ class SubCategoryScreen extends StatelessWidget {
                           Gap(20),
                           IconButton(
                               onPressed: () {
-                                context.dataProvider.getAllSubCategory();
+                                context.dataProvider.getAllSubCategory(showSnack: true);
                               },
                               icon: Icon(Icons.refresh)),
                         ],

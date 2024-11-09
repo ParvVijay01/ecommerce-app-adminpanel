@@ -69,6 +69,7 @@ class DataProvider extends ChangeNotifier {
   List<MyNotification> get notifications => _filteredNotifications;
 
   DataProvider() {
+    getAllProducts();
     getAllCategory();
     getAllSubCategory();
     getAllBrands();
@@ -216,7 +217,7 @@ class DataProvider extends ChangeNotifier {
     notifyListeners();
   }
   
-Future<List<Variant>> getAllVariant({bool showSnack = false}) async {
+  Future<List<Variant>> getAllVariant({bool showSnack = false}) async {
     try{
       Response response = await service.getItems(endpointUrl: "variants");
       if(response.isOk){
@@ -239,7 +240,6 @@ Future<List<Variant>> getAllVariant({bool showSnack = false}) async {
 }
 
 
-//TODO: should complete filterVariants
   void filteredVariant(String keyword) {
     if (keyword.isEmpty) {
       _filteredVariants = List.from(_allVariants);
@@ -253,10 +253,44 @@ Future<List<Variant>> getAllVariant({bool showSnack = false}) async {
   }
 
 
-//TODO: should complete getAllProduct
+  Future<List<Product>> getAllProducts({bool showSnack = false}) async {
+    try{
+      Response response = await service.getItems(endpointUrl: "products");
+      if(response.isOk){
+        ApiResponse<List<Product>> apiResponse = ApiResponse<
+            List<Product>>.fromJson(
+          response.body,
+              (json) =>
+              (json as List).map((item) => Product.fromJson(item)).toList(),
+        );
+        _allProducts = apiResponse.data ?? [];
+        _filteredProducts = List.from(_allProducts);
+        notifyListeners();
+        if (showSnack) SnackBarHelper.showSuccessSnackBar(apiResponse.message);
+      }
+    }catch(err){
+      if (showSnack) SnackBarHelper.showErrorSnackBar(err.toString());
+      rethrow;
+    }
+    return _filteredProducts;
+  }
 
 
-//TODO: should complete filterProducts
+  void filteredProducts(String keyword) {
+    if (keyword.isEmpty) {
+      _filteredProducts = List.from(_allProducts);
+    } else {
+      final lowerKeyword = keyword.toLowerCase();
+      _filteredProducts = _allProducts.where((products) {
+        final productNameContainsKeyWord =  (products.name ?? '').toLowerCase().contains(lowerKeyword);
+        final categoryNameContainsKeyWord =  products.proCategoryId?.name?.toLowerCase().contains(lowerKeyword) ?? false;
+        final subCategoryNameContainsKeyWord =  products.proSubCategoryId?.name?.toLowerCase().contains(lowerKeyword) ?? false;
+
+        return productNameContainsKeyWord || categoryNameContainsKeyWord || subCategoryNameContainsKeyWord;
+      }).toList();
+    }
+    notifyListeners();
+  }
 
 
 //TODO: should complete getAllCoupons
@@ -286,10 +320,40 @@ Future<List<Variant>> getAllVariant({bool showSnack = false}) async {
 //TODO: should complete calculateOrdersWithStatus
 
 
-//TODO: should complete filterProductsByQuantity
+  void filterProductsByQuantity(String productQntType){
+    if(productQntType == 'All Product'){
+      _filteredProducts = List.from(_allProducts);
+    } else if(productQntType == 'Out of Stock'){
+      _filteredProducts = _allProducts.where((product){
+        return product.quantity != null && product.quantity == 0;
+      }).toList();
+    } else if(productQntType == 'Other Stock'){
+      _filteredProducts = _allProducts.where((product){
+        return product.quantity != null && product.quantity != 0 && product.quantity != 1;
+      }).toList();
+    } else if(productQntType == 'Limited Stock'){
+      _filteredProducts = _allProducts.where((product){
+        return product.quantity != null && product.quantity == 1;
+      }).toList();
+    } else {
+      _filteredProducts = List.from(_allProducts);
+    }
+    notifyListeners();
+  }
 
-
-//TODO: should complete calculateProductWithQuantity
+  int calculateProductWithQuantity({int? quantity}){
+      int totalProducts = 0;
+      if(quantity == null){
+        totalProducts = _allProducts.length;
+      } else {
+        for (Product product in _allProducts){
+          if(product.quantity != null && product.quantity == quantity){
+            totalProducts += 1;
+          }
+        }
+      }
+      return totalProducts;
+  }
 
 }
 

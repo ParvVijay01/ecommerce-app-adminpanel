@@ -75,6 +75,7 @@ class DataProvider extends ChangeNotifier {
     getAllBrands();
     getAllVariantType();
     getAllVariant();
+    getAllPosters();
   }
 
 
@@ -299,10 +300,40 @@ class DataProvider extends ChangeNotifier {
 //TODO: should complete filterCoupons
 
 
-//TODO: should complete getAllPosters
+  Future<List<Poster>> getAllPosters({bool showSnack = false}) async {
+    try{
+      Response response = await service.getItems(endpointUrl: "posters");
+      if(response.isOk){
+        ApiResponse<List<Poster>> apiResponse = ApiResponse<
+            List<Poster>>.fromJson(
+          response.body,
+              (json) =>
+              (json as List).map((item) => Poster.fromJson(item)).toList(),
+        );
+        _allPosters = apiResponse.data ?? [];
+        _filteredPosters = List.from(_allPosters);
+        notifyListeners();
+        if (showSnack) SnackBarHelper.showSuccessSnackBar(apiResponse.message);
+      }
+    }catch(err){
+      if (showSnack) SnackBarHelper.showErrorSnackBar(err.toString());
+      rethrow;
+    }
+    return _filteredPosters;
+  }
 
 
-//TODO: should complete filterPosters
+  void filterPosters(String keyword) {
+    if (keyword.isEmpty) {
+      _filteredPosters = List.from(_allPosters);
+    } else {
+      final lowerKeyword = keyword.toLowerCase();
+      _filteredPosters = _allPosters.where((posters) {
+        return (posters.posterName ?? '').toLowerCase().contains(lowerKeyword);
+      }).toList();
+    }
+    notifyListeners();
+  }
 
 
 //TODO: should complete getAllNotifications

@@ -72,39 +72,40 @@ class CouponCodeProvider extends ChangeNotifier {
 
 
   updateCoupon() async {
-    try{
-      if (endDateCtrl.text.isEmpty){
-        SnackBarHelper.showErrorSnackBar("Select end date!");
-        return;
-      }
-      Map<String, dynamic> coupon = {
-        "couponCode": couponCodeCtrl.text,
-        "discountType": selectedDiscountType,
-        "discountAmount": discountAmountCtrl.text,
-        "minimumPurchaseAmount": minimumPurchaseAmountCtrl.text,
-        "endDate": endDateCtrl.text,
-        "status": selectedCouponStatus,
-        "applicableCategory": selectedCategory?.sId,
-        "applicableSubCategory": selectedSubCategory?.sId,
-        "applicableProduct": selectedProduct?.sId
-      };
+    try {
+      if (couponForUpdate != null) {
+        Map<String, dynamic> coupon = {
+          "couponCode": couponCodeCtrl.text,
+          "discountType": selectedDiscountType,
+          "discountAmount": discountAmountCtrl.text,
+          "minimumPurchaseAmount": minimumPurchaseAmountCtrl.text,
+          "endDate": endDateCtrl.text,
+          "status": selectedCouponStatus,
+          "applicableCategory": selectedCategory?.sId,
+          "applicableSubCategory": selectedSubCategory?.sId,
+          "applicableProduct": selectedProduct?.sId
+        };
 
-      final response = await service.updateItem(endpointUrl: "couponCodes", itemData: coupon, itemId: couponForUpdate?.sId ?? "");
-      if(response.isOk){
-        ApiResponse apiResponse = ApiResponse.fromJson(response.body, null);
-        if(apiResponse.success == true) {
-          clearFields();
-          SnackBarHelper.showSuccessSnackBar("${apiResponse.message}");
-          log("Coupon added");
-          _dataProvider.getAllCoupons();
-        } else{
-          SnackBarHelper.showErrorSnackBar("Failed to add coupon: ${apiResponse.message}");
+        final response = await service.updateItem(endpointUrl: "couponCodes",
+            itemData: coupon,
+            itemId: couponForUpdate?.sId ?? "");
+        if (response.isOk) {
+          ApiResponse apiResponse = ApiResponse.fromJson(response.body, null);
+          if (apiResponse.success == true) {
+            clearFields();
+            SnackBarHelper.showSuccessSnackBar("${apiResponse.message}");
+            log("Coupon added");
+            _dataProvider.getAllCoupons();
+          } else {
+            SnackBarHelper.showErrorSnackBar(
+                "Failed to add coupon: ${apiResponse.message}");
+          }
+        } else {
+          SnackBarHelper.showErrorSnackBar(
+              "Error ${response.body?['message'] ?? response.statusText}");
         }
-      } else {
-        SnackBarHelper.showErrorSnackBar(
-            "Error ${response.body?['message'] ?? response.statusText}");
       }
-    } catch(err){
+      } catch (err) {
       print(err);
       SnackBarHelper.showErrorSnackBar("An error occurred: $err");
       rethrow;
@@ -135,7 +136,6 @@ class CouponCodeProvider extends ChangeNotifier {
       }
     } catch (err){
       print(err);
-      SnackBarHelper.showErrorSnackBar("An error occurred: $err");
       rethrow;
     }
   }

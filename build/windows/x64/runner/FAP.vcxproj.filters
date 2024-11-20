@@ -1,36 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\flutter_window.cpp">
+    <ClCompile Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\flutter_window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\main.cpp">
+    <ClCompile Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\run_loop.cpp">
+    <ClCompile Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\run_loop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\utils.cpp">
+    <ClCompile Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\win32_window.cpp">
+    <ClCompile Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\win32_window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\generated_plugin_registrant.cc">
+    <ClCompile Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\generated_plugin_registrant.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\CMakeLists.txt" />
+    <CustomBuild Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\Runner.rc">
+    <ResourceCompile Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\Runner.rc">
       <Filter>Source Files</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{A44FD119-3011-38E0-A1C3-D613A6B0CBAA}</UniqueIdentifier>
+      <UniqueIdentifier>{039E1426-B2D4-3BB3-BDC9-9E6F51E346D9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

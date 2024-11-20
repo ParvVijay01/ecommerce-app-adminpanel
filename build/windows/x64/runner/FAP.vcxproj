@@ -18,7 +18,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{6F0AC959-A61E-30AF-B8FB-A0D23828DBA0}</ProjectGuid>
+    <ProjectGuid>{3C1CD89D-57CA-34BE-86D0-332D8A1B6C76}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -50,19 +50,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\runner\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\runner\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">FAP.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">FAP</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\runner\Profile\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\runner\Profile\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">FAP.dir\Profile\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">FAP</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\runner\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\runner\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">FAP.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">FAP</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
@@ -71,7 +71,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -88,13 +88,14 @@
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;_DEBUG;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_HAS_EXCEPTIONS=0;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -102,25 +103,25 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\flutter\Debug\flutter_wrapper_app.lib;..\plugins\file_selector_windows\Debug\file_selector_windows_plugin.lib;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\flutter\Debug\flutter_wrapper_app.lib;..\plugins\file_selector_windows\Debug\file_selector_windows_plugin.lib;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64/runner/Debug/FAP.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64/runner/Debug/FAP.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64/runner/Debug/FAP.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64/runner/Debug/FAP.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
     <Manifest>
-      <AdditionalManifestFiles>D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\runner.exe.manifest;</AdditionalManifestFiles>
+      <AdditionalManifestFiles>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\runner.exe.manifest;</AdditionalManifestFiles>
     </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>"4100"</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -137,13 +138,14 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"Profile\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -151,25 +153,25 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\flutter\Profile\flutter_wrapper_app.lib;..\plugins\file_selector_windows\Profile\file_selector_windows_plugin.lib;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\flutter\Profile\flutter_wrapper_app.lib;..\plugins\file_selector_windows\Profile\file_selector_windows_plugin.lib;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64/runner/Profile/FAP.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64/runner/Profile/FAP.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64/runner/Profile/FAP.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64/runner/Profile/FAP.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
     <Manifest>
-      <AdditionalManifestFiles>D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\runner.exe.manifest;</AdditionalManifestFiles>
+      <AdditionalManifestFiles>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\runner.exe.manifest;</AdditionalManifestFiles>
     </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>"4100"</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -186,13 +188,14 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\cpp_client_wrapper\include;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\.plugin_symlinks\file_selector_windows\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -200,28 +203,28 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\flutter\Release\flutter_wrapper_app.lib;..\plugins\file_selector_windows\Release\file_selector_windows_plugin.lib;D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\flutter\Release\flutter_wrapper_app.lib;..\plugins\file_selector_windows\Release\file_selector_windows_plugin.lib;D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64/runner/Release/FAP.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64/runner/Release/FAP.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64/runner/Release/FAP.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64/runner/Release/FAP.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
     <Manifest>
-      <AdditionalManifestFiles>D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\runner.exe.manifest;</AdditionalManifestFiles>
+      <AdditionalManifestFiles>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\runner.exe.manifest;</AdditionalManifestFiles>
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\CMakeLists.txt">
+    <CustomBuild Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/windows/runner/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/windows/runner/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/windows -BD:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64 --check-stamp-file D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64/runner/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/windows -BD:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64 --check-stamp-file D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64/runner/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -230,11 +233,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/windows/runner/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/windows/runner/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/windows -BD:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64 --check-stamp-file D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64/runner/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/windows -BD:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64 --check-stamp-file D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64/runner/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -243,11 +246,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/windows/runner/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/windows/runner/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/windows -BD:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64 --check-stamp-file D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64/runner/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/windows -BD:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64 --check-stamp-file D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64/runner/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -256,38 +259,38 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\flutter_window.cpp" />
-    <ClCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\main.cpp" />
-    <ClCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\run_loop.cpp" />
-    <ClCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\utils.cpp" />
-    <ClCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\win32_window.cpp" />
-    <ClCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\generated_plugin_registrant.cc" />
-    <ResourceCompile Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\Runner.rc" />
+    <ClCompile Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\flutter_window.cpp" />
+    <ClCompile Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\main.cpp" />
+    <ClCompile Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\run_loop.cpp" />
+    <ClCompile Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\utils.cpp" />
+    <ClCompile Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\win32_window.cpp" />
+    <ClCompile Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\generated_plugin_registrant.cc" />
+    <ResourceCompile Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\Runner.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\ZERO_CHECK.vcxproj">
-      <Project>{D7F22730-5B00-3908-BDD0-D1415C695CBA}</Project>
+    <ProjectReference Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\ZERO_CHECK.vcxproj">
+      <Project>{2EC3F861-1481-3AC1-B546-159A2C4312D0}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\plugins\file_selector_windows\file_selector_windows_plugin.vcxproj">
-      <Project>{65DDB7A9-7F65-3AC9-9B79-8EF3A746D8E0}</Project>
+    <ProjectReference Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\plugins\file_selector_windows\file_selector_windows_plugin.vcxproj">
+      <Project>{28C51743-6D08-3B08-9C72-3C70562B6F2D}</Project>
       <Name>file_selector_windows_plugin</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\flutter\flutter_assemble.vcxproj">
-      <Project>{4FD17D41-E3D3-320C-8032-9AE02DB93FA2}</Project>
+    <ProjectReference Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\flutter\flutter_assemble.vcxproj">
+      <Project>{33ABA771-D19A-3DC7-B930-923F3D61EC97}</Project>
       <Name>flutter_assemble</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\flutter\flutter_wrapper_app.vcxproj">
-      <Project>{83573F0C-FA5C-374A-A0E1-96D969522238}</Project>
+    <ProjectReference Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\flutter\flutter_wrapper_app.vcxproj">
+      <Project>{B7018428-6C9A-3BC1-B36F-5EFF8DD8D766}</Project>
       <Name>flutter_wrapper_app</Name>
     </ProjectReference>
   </ItemGroup>

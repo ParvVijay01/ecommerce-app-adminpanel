@@ -21,7 +21,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{51785AFB-E76A-321B-B185-926AACE1174E}</ProjectGuid>
+    <ProjectGuid>{6623B11F-4E99-39B6-8DCD-D5EEABDB3465}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -88,11 +88,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\runner\CMakeLists.txt">
+    <CustomBuild Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\runner\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/windows/runner/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/windows/runner/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/windows -BD:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64 --check-stamp-file D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64/runner/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/windows -BD:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64 --check-stamp-file D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64/runner/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -101,11 +101,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/windows/runner/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/windows/runner/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/windows -BD:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64 --check-stamp-file D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64/runner/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/windows -BD:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64 --check-stamp-file D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64/runner/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -114,11 +114,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/windows/runner/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/windows/runner/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/windows -BD:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64 --check-stamp-file D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64/runner/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/windows -BD:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64 --check-stamp-file D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64/runner/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -127,21 +127,21 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\ZERO_CHECK.vcxproj">
-      <Project>{D7F22730-5B00-3908-BDD0-D1415C695CBA}</Project>
+    <ProjectReference Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\ZERO_CHECK.vcxproj">
+      <Project>{2EC3F861-1481-3AC1-B546-159A2C4312D0}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\runner\FAP.vcxproj">
-      <Project>{6F0AC959-A61E-30AF-B8FB-A0D23828DBA0}</Project>
+    <ProjectReference Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\runner\FAP.vcxproj">
+      <Project>{3C1CD89D-57CA-34BE-86D0-332D8A1B6C76}</Project>
       <Name>FAP</Name>
     </ProjectReference>
   </ItemGroup>

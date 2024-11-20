@@ -1,7 +1,6 @@
 import '../../../models/variant_type.dart';
 import '../../../utility/extensions.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import '../../../utility/constants.dart';
 import '../../../widgets/custom_text_field.dart';
 
@@ -80,8 +79,12 @@ class VariantTypeSubmitForm extends StatelessWidget {
                     ),
                     onPressed: () {
                       // Validate and save the form
-                      if (context.variantTypeProvider.addVariantsTypeFormKey.currentState!.validate()) {
-                        context.variantTypeProvider.addVariantsTypeFormKey.currentState!.save();
+                      if (context.variantTypeProvider.addVariantsTypeFormKey
+                          .currentState!
+                          .validate()) {
+                        context.variantTypeProvider.addVariantsTypeFormKey
+                            .currentState!
+                            .save();
                         context.variantTypeProvider.submitVariantType();
                         Navigator.of(context).pop();
                       }
@@ -105,7 +108,9 @@ void showAddVariantsTypeForm(BuildContext context, VariantType? variantType) {
     builder: (BuildContext context) {
       return AlertDialog(
         backgroundColor: bgColor,
-        title: Center(child: Text('Add Variant Type'.toUpperCase(), style: TextStyle(color: primaryColor))),
+        title: Center(
+            child: Text('Add Variant Type'.toUpperCase(),
+                style: TextStyle(color: primaryColor))),
         content: VariantTypeSubmitForm(variantType: variantType),
       );
     },

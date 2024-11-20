@@ -2,19 +2,19 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\flutter\x64\Debug\flutter_assemble</FullPath>
+      <FullPath>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\flutter\x64\Debug\flutter_assemble</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\plugins\file_selector_windows\Debug\file_selector_windows_plugin.dll</FullPath>
+      <FullPath>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\plugins\file_selector_windows\Debug\file_selector_windows_plugin.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\runner\Debug\FAP.exe</FullPath>
+      <FullPath>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\runner\Debug\FAP.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\x64\Debug\ALL_BUILD</FullPath>
+      <FullPath>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\x64\Debug\ALL_BUILD</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

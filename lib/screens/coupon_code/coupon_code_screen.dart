@@ -1,4 +1,3 @@
-import 'package:admin/main.dart';
 import 'package:admin/utility/extensions.dart';
 
 import 'components/coupon_code_header.dart';
@@ -8,12 +7,10 @@ import 'package:gap/gap.dart';
 import '../../utility/constants.dart';
 import 'components/add_coupon_form.dart';
 
-
-
 class CouponCodeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return  SafeArea(
+    return SafeArea(
       child: SingleChildScrollView(
         primary: false,
         padding: EdgeInsets.all(defaultPadding),
@@ -34,18 +31,14 @@ class CouponCodeScreen extends StatelessWidget {
                           Expanded(
                             child: Text(
                               "My Sub Categories",
-                              style: Theme
-                                  .of(context)
-                                  .textTheme
-                                  .titleMedium,
+                              style: Theme.of(context).textTheme.titleMedium,
                             ),
                           ),
                           ElevatedButton.icon(
                             style: TextButton.styleFrom(
                               padding: EdgeInsets.symmetric(
                                 horizontal: defaultPadding * 1.5,
-                                vertical:
-                                defaultPadding,
+                                vertical: defaultPadding,
                               ),
                             ),
                             onPressed: () {
@@ -57,7 +50,8 @@ class CouponCodeScreen extends StatelessWidget {
                           Gap(20),
                           IconButton(
                               onPressed: () {
-                                context.dataProvider.getAllCoupons(showSnack: true);
+                                context.dataProvider
+                                    .getAllCoupons(showSnack: true);
                               },
                               icon: Icon(Icons.refresh)),
                         ],

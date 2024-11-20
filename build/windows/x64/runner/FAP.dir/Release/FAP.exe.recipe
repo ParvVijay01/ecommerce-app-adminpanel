@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\x64\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\flutter\x64\Release\flutter_assemble</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\plugins\file_selector_windows\Release\file_selector_windows_plugin.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\runner\Release\FAP.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

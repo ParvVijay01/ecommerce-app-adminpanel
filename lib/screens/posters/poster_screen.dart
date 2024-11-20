@@ -1,4 +1,3 @@
-import 'package:admin/screens/brands/brand_screen.dart';
 import 'package:admin/utility/extensions.dart';
 
 import 'components/add_poster_form.dart';
@@ -7,7 +6,6 @@ import 'components/poster_list_section.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import '../../utility/constants.dart';
-
 
 class PosterScreen extends StatelessWidget {
   @override
@@ -52,7 +50,8 @@ class PosterScreen extends StatelessWidget {
                           Gap(20),
                           IconButton(
                               onPressed: () {
-                                context.dataProvider.getAllPosters(showSnack: true);
+                                context.dataProvider
+                                    .getAllPosters(showSnack: true);
                               },
                               icon: Icon(Icons.refresh)),
                         ],

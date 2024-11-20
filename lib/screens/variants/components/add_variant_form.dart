@@ -3,7 +3,6 @@ import '../../../models/variant_type.dart';
 import '../provider/variant_provider.dart';
 import '../../../utility/extensions.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import '../../../utility/constants.dart';
 import '../../../widgets/custom_dropdown.dart';
@@ -16,9 +15,7 @@ class VariantSubmitForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery
-        .of(context)
-        .size;
+    var size = MediaQuery.of(context).size;
     context.variantProvider.setDataForUpdateVariant(variant);
     return SingleChildScrollView(
       child: Form(
@@ -42,8 +39,10 @@ class VariantSubmitForm extends StatelessWidget {
                         return CustomDropdown(
                           initialValue: variantProvider.selectedVariantType,
                           items: context.dataProvider.variantTypes,
-                          hintText: variantProvider.selectedVariantType?.name ?? 'Select Variant Type',
-                          displayItem: (VariantType? variantType) => variantType?.name ?? '',
+                          hintText: variantProvider.selectedVariantType?.name ??
+                              'Select Variant Type',
+                          displayItem: (VariantType? variantType) =>
+                              variantType?.name ?? '',
                           onChanged: (newValue) {
                             variantProvider.selectedVariantType = newValue;
                             variantProvider.updateUI();
@@ -54,7 +53,6 @@ class VariantSubmitForm extends StatelessWidget {
                             }
                             return null;
                           },
-
                         );
                       },
                     ),
@@ -96,8 +94,11 @@ class VariantSubmitForm extends StatelessWidget {
                     ),
                     onPressed: () {
                       // Validate and save the form
-                      if (context.variantProvider.addVariantsFormKey.currentState!.validate()) {
-                        context.variantProvider.addVariantsFormKey.currentState!.save();
+                      if (context
+                          .variantProvider.addVariantsFormKey.currentState!
+                          .validate()) {
+                        context.variantProvider.addVariantsFormKey.currentState!
+                            .save();
                         context.variantProvider.submitVariant();
                         Navigator.of(context).pop();
                       }
@@ -121,7 +122,9 @@ void showAddVariantForm(BuildContext context, Variant? variant) {
     builder: (BuildContext context) {
       return AlertDialog(
         backgroundColor: bgColor,
-        title: Center(child: Text('Add Variant'.toUpperCase(), style: TextStyle(color: primaryColor))),
+        title: Center(
+            child: Text('Add Variant'.toUpperCase(),
+                style: TextStyle(color: primaryColor))),
         content: VariantSubmitForm(variant: variant),
       );
     },

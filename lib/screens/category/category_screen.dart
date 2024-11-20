@@ -1,4 +1,3 @@
-import 'package:admin/core/data/data_provider.dart';
 import 'package:admin/utility/extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -50,7 +49,8 @@ class CategoryScreen extends StatelessWidget {
                           Gap(20),
                           IconButton(
                               onPressed: () {
-                                context.dataProvider.getAllCategory(showSnack: true);
+                                context.dataProvider
+                                    .getAllCategory(showSnack: true);
                               },
                               icon: Icon(Icons.refresh)),
                         ],

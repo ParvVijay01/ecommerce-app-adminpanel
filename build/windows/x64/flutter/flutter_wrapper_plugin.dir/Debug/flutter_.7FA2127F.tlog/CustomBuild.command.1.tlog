@@ -1,0 +1,10 @@
+^D:\ECOMM\PARV-PROJ\ECOM_STARTUP_CODE\CLIENT_SIDE\ADMIN_PANEL_STARTUP\ECOMMERCE-APP-ADMINPANEL\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/windows -BD:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64 --check-stamp-file D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

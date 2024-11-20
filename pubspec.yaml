@@ -16,7 +16,7 @@ dependencies:
   fl_chart: ^0.69.0
   flutter:
     sdk: flutter
-  flutter_svg: ^2.0.10+1
+  flutter_svg: ^2.0.14
   gap: ^3.0.1
   get: ^4.6.6
   google_fonts: ^6.2.1

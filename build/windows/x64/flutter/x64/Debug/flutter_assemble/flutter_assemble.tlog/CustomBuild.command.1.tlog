@@ -1,6 +1,6 @@
-^D:\PARV-PROJ\ECOM_STARTUP_CODE\CLIENT_SIDE\ADMIN_PANAL_STARTUP\BUILD\WINDOWS\X64\CMAKEFILES\4FA79B8B417BB1974EDC51CD2EEE0160\FLUTTER_WINDOWS.DLL.RULE
+^D:\ECOMM\PARV-PROJ\ECOM_STARTUP_CODE\CLIENT_SIDE\ADMIN_PANEL_STARTUP\ECOMMERCE-APP-ADMINPANEL\BUILD\WINDOWS\X64\CMAKEFILES\C91B51F2DF5C5E8181BFD825F922228D\FLUTTER_WINDOWS.DLL.RULE
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Src\flutter PROJECT_DIR=D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup FLUTTER_ROOT=C:\Src\flutter FLUTTER_EPHEMERAL_DIR=D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\windows\flutter\ephemeral PROJECT_DIR=D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup FLUTTER_TARGET=D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\lib\main.dart DART_DEFINES=Zmx1dHRlci5pbnNwZWN0b3Iuc3RydWN0dXJlZEVycm9ycz10cnVl,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC9lZGQ4NTQ2MTE2NDU3YmRmMWM1YmRmYjEzZWNiOTQ2M2QyYmI1ZWQ0Lw== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\.dart_tool\package_config.json C:/Src/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Src\flutter PROJECT_DIR=D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel FLUTTER_ROOT=C:\Src\flutter FLUTTER_EPHEMERAL_DIR=D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\windows\flutter\ephemeral PROJECT_DIR=D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel FLUTTER_TARGET=D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\lib\main.dart DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\.dart_tool\package_config.json C:/Src/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -8,7 +8,7 @@ endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
-^D:\PARV-PROJ\ECOM_STARTUP_CODE\CLIENT_SIDE\ADMIN_PANAL_STARTUP\BUILD\WINDOWS\X64\CMAKEFILES\EDF7149975B31AF02F586C83DAACDBBC\FLUTTER_ASSEMBLE.RULE
+^D:\ECOMM\PARV-PROJ\ECOM_STARTUP_CODE\CLIENT_SIDE\ADMIN_PANEL_STARTUP\ECOMMERCE-APP-ADMINPANEL\BUILD\WINDOWS\X64\CMAKEFILES\1463437C3DD7A3F5FA975411E0202F66\FLUTTER_ASSEMBLE.RULE
 setlocal
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -16,9 +16,9 @@ endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
-^D:\PARV-PROJ\ECOM_STARTUP_CODE\CLIENT_SIDE\ADMIN_PANAL_STARTUP\WINDOWS\FLUTTER\CMAKELISTS.TXT
+^D:\ECOMM\PARV-PROJ\ECOM_STARTUP_CODE\CLIENT_SIDE\ADMIN_PANEL_STARTUP\ECOMMERCE-APP-ADMINPANEL\WINDOWS\FLUTTER\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/windows -BD:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64 --check-stamp-file D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/build/windows/x64/flutter/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/windows -BD:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64 --check-stamp-file D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/build/windows/x64/flutter/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

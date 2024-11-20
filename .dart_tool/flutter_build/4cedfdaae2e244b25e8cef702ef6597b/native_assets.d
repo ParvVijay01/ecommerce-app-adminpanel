@@ -1,0 +1,1 @@
+ D:\\Ecomm\\Parv-proj\\ecom_startup_code\\client_side\\admin_panel_startup\\ecommerce-app-adminpanel\\.dart_tool\\flutter_build\\4cedfdaae2e244b25e8cef702ef6597b\\native_assets.yaml: 

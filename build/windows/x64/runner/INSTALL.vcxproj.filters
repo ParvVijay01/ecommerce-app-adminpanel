@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="D:\Parv-Proj\ecom_startup_code\client_side\admin_panal_startup\build\windows\x64\CMakeFiles\b37fcda04b22b7be12a964fac9a205f6\INSTALL_force.rule">
+    <CustomBuild Include="D:\Ecomm\Parv-proj\ecom_startup_code\client_side\admin_panel_startup\ecommerce-app-adminpanel\build\windows\x64\CMakeFiles\284adaeee0c868b0932247d9920ee9a2\INSTALL_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{921B372B-60A6-3D8E-AD35-4558E2FBB2ED}</UniqueIdentifier>
+      <UniqueIdentifier>{5A270E81-788C-39AF-8E61-728F0E940133}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

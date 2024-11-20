@@ -1,4 +1,4 @@
-# Install script for directory: D:/Parv-Proj/ecom_startup_code/client_side/admin_panal_startup/windows/runner
+# Install script for directory: D:/Ecomm/Parv-proj/ecom_startup_code/client_side/admin_panel_startup/ecommerce-app-adminpanel/windows/runner
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

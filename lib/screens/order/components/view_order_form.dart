@@ -41,8 +41,16 @@ class OrderSubmitForm extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Expanded(child: formRow('Name:', Text(order?.userID?.name ?? 'N/A', style: TextStyle(fontSize: 16)))),
-                  Expanded(child: formRow('Order Id:', Text(order?.sId ?? 'N/A', style: TextStyle(fontSize: 12)))),
+                  Expanded(
+                      child: formRow(
+                          'Name:',
+                          Text(order?.userID?.name ?? 'N/A',
+                              style: TextStyle(fontSize: 16)))),
+                  Expanded(
+                      child: formRow(
+                          'Order Id:',
+                          Text(order?.sId ?? 'N/A',
+                              style: TextStyle(fontSize: 12)))),
                 ],
               ),
               itemsSection(),
@@ -56,10 +64,17 @@ class OrderSubmitForm extends StatelessWidget {
                     return CustomDropdown(
                       hintText: 'Status',
                       initialValue: orderProvider.selectedOrderStatus,
-                      items: ['pending', 'processing', 'shipped', 'delivered', 'cancelled'],
+                      items: [
+                        'pending',
+                        'processing',
+                        'shipped',
+                        'delivered',
+                        'cancelled'
+                      ],
                       displayItem: (val) => val,
                       onChanged: (newValue) {
-                        orderProvider.selectedOrderStatus = newValue ?? 'pending';
+                        orderProvider.selectedOrderStatus =
+                            newValue ?? 'pending';
                         orderProvider.updateUI();
                       },
                       validator: (value) {
@@ -94,7 +109,10 @@ class OrderSubmitForm extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Expanded(flex: 1, child: Text(label, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16))),
+          Expanded(
+              flex: 1,
+              child: Text(label,
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16))),
           Expanded(flex: 2, child: dataWidget),
         ],
       ),
@@ -108,7 +126,8 @@ class OrderSubmitForm extends StatelessWidget {
       decoration: BoxDecoration(
         color: secondaryColor, // Light grey background to stand out
         borderRadius: BorderRadius.circular(8.0),
-        border: Border.all(color: Colors.blueAccent), // Blue border for emphasis
+        border:
+            Border.all(color: Colors.blueAccent), // Blue border for emphasis
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -117,14 +136,32 @@ class OrderSubmitForm extends StatelessWidget {
             padding: EdgeInsets.symmetric(vertical: 8.0),
             child: Text(
               'Shipping Address',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.blueAccent),
+              style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blueAccent),
             ),
           ),
-          formRow('Phone:', Text(order?.shippingAddress?.phone ?? 'N/A', style: TextStyle(fontSize: 16))),
-          formRow('Street:', Text(order?.shippingAddress?.street ?? 'N/A', style: TextStyle(fontSize: 16))),
-          formRow('City:', Text(order?.shippingAddress?.city ?? 'N/A', style: TextStyle(fontSize: 16))),
-          formRow('Postal Code:', Text(order?.shippingAddress?.postalCode ?? 'N/A', style: TextStyle(fontSize: 16))),
-          formRow('Country:', Text(order?.shippingAddress?.country ?? 'N/A', style: TextStyle(fontSize: 16))),
+          formRow(
+              'Phone:',
+              Text(order?.shippingAddress?.phone ?? 'N/A',
+                  style: TextStyle(fontSize: 16))),
+          formRow(
+              'Street:',
+              Text(order?.shippingAddress?.street ?? 'N/A',
+                  style: TextStyle(fontSize: 16))),
+          formRow(
+              'City:',
+              Text(order?.shippingAddress?.city ?? 'N/A',
+                  style: TextStyle(fontSize: 16))),
+          formRow(
+              'Postal Code:',
+              Text(order?.shippingAddress?.postalCode ?? 'N/A',
+                  style: TextStyle(fontSize: 16))),
+          formRow(
+              'Country:',
+              Text(order?.shippingAddress?.country ?? 'N/A',
+                  style: TextStyle(fontSize: 16))),
         ],
       ),
     );
@@ -154,16 +191,29 @@ class OrderSubmitForm extends StatelessWidget {
             padding: EdgeInsets.symmetric(vertical: 8.0),
             child: Text(
               'Payment Details',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: primaryColor),
+              style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: primaryColor),
             ),
           ),
-          formRow('Payment Method:', Text(order?.paymentMethod ?? 'N/A', style: TextStyle(fontSize: 16))),
-          formRow('Coupon Code:', Text(order?.couponCode?.couponCode ?? 'N/A', style: TextStyle(fontSize: 16))),
-          formRow('Order Sub Total:',
-              Text('\$${order?.orderTotal?.subtotal?.toStringAsFixed(2) ?? 'N/A'}', style: TextStyle(fontSize: 16))),
+          formRow(
+              'Payment Method:',
+              Text(order?.paymentMethod ?? 'N/A',
+                  style: TextStyle(fontSize: 16))),
+          formRow(
+              'Coupon Code:',
+              Text(order?.couponCode?.couponCode ?? 'N/A',
+                  style: TextStyle(fontSize: 16))),
+          formRow(
+              'Order Sub Total:',
+              Text(
+                  '\$${order?.orderTotal?.subtotal?.toStringAsFixed(2) ?? 'N/A'}',
+                  style: TextStyle(fontSize: 16))),
           formRow(
               'Discount:',
-              Text('\$${order?.orderTotal?.discount?.toStringAsFixed(2) ?? 'N/A'}',
+              Text(
+                  '\$${order?.orderTotal?.discount?.toStringAsFixed(2) ?? 'N/A'}',
                   style: TextStyle(fontSize: 16, color: Colors.red))),
           formRow(
               'Grand Total:',
@@ -198,11 +248,16 @@ class OrderSubmitForm extends StatelessWidget {
             padding: EdgeInsets.symmetric(vertical: 8.0),
             child: Text(
               'Items',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: primaryColor),
+              style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: primaryColor),
             ),
           ),
           _buildItemsList(),
-          SizedBox(height: defaultPadding), // Add some spacing before the total price
+          SizedBox(
+              height:
+                  defaultPadding), // Add some spacing before the total price
           formRow(
             'Total Price:',
             Text('\$${order?.totalPrice?.toStringAsFixed(2) ?? 'N/A'}',
@@ -219,13 +274,15 @@ class OrderSubmitForm extends StatelessWidget {
     }
     return ListView.builder(
       shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(), // Disable scrolling within ListView
+      physics:
+          NeverScrollableScrollPhysics(), // Disable scrolling within ListView
       itemCount: order!.items!.length,
       itemBuilder: (context, index) {
         final item = order!.items![index];
         return Padding(
           padding: EdgeInsets.only(bottom: 4.0), // Add spacing between items
-          child: Text('${item.productName}: ${item.quantity} x \$${item.price?.toStringAsFixed(2)}',
+          child: Text(
+              '${item.productName}: ${item.quantity} x \$${item.price?.toStringAsFixed(2)}',
               style: TextStyle(fontSize: 16)),
         );
       },
@@ -245,9 +302,15 @@ class OrderSubmitForm extends StatelessWidget {
         ElevatedButton(
           style: ElevatedButton.styleFrom(backgroundColor: primaryColor),
           onPressed: () {
-            if (Provider.of<OrderProvider>(context, listen: false).orderFormKey.currentState!.validate()) {
-              Provider.of<OrderProvider>(context, listen: false).orderFormKey.currentState!.save();
-              //TODO: should complete call updateOrder
+            if (Provider.of<OrderProvider>(context, listen: false)
+                .orderFormKey
+                .currentState!
+                .validate()) {
+              Provider.of<OrderProvider>(context, listen: false)
+                  .orderFormKey
+                  .currentState!
+                  .save();
+              context.orderProvider.updateOrder();
               Navigator.of(context).pop();
             }
           },
@@ -265,7 +328,9 @@ void showOrderForm(BuildContext context, Order? order) {
     builder: (BuildContext context) {
       return AlertDialog(
         backgroundColor: bgColor,
-        title: Center(child: Text('Order Details'.toUpperCase(), style: TextStyle(color: primaryColor))),
+        title: Center(
+            child: Text('Order Details'.toUpperCase(),
+                style: TextStyle(color: primaryColor))),
         content: OrderSubmitForm(order: order),
       );
     },
